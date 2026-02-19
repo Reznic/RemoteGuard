@@ -1,0 +1,34 @@
+#
+# Copyright (c) 2023 Nordic Semiconductor ASA
+#
+# SPDX-License-Identifier: LicenseRef-Nordic-5-Clause
+#
+
+menuconfig MQTT_SAMPLE_CAMERA
+	bool "Enable camera module"
+	default y
+	help
+	  Enable the camera module for ESP32-CAM communication over SPI.
+
+if MQTT_SAMPLE_CAMERA
+
+config MQTT_SAMPLE_CAMERA_LOG_LEVEL
+	int "Camera module log level"
+	default 3
+	range 0 4
+	help
+	  Sets the log level for the camera module.
+
+config MQTT_SAMPLE_CAMERA_THREAD_STACK_SIZE
+	int "Camera module thread stack size"
+	default 2048
+	help
+	  Stack size for the camera module thread.
+
+config MQTT_SAMPLE_CAMERA_MESSAGE_QUEUE_SIZE
+	int "Camera module message queue size"
+	default 10
+	help
+	  Size of the message queue for the camera module.
+
+endif # MQTT_SAMPLE_CAMERA

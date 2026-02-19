@@ -1,0 +1,21 @@
+#
+# ESP32-CAM custom SPI camera driver
+#
+
+menuconfig ESP32CAM_DRIVER
+	bool "ESP32-CAM SPI camera driver"
+	default y
+	help
+	  Enable the custom driver bound to the esp32,cam-spi devicetree node.
+
+if ESP32CAM_DRIVER
+
+config ESP32CAM_DRIVER_LOG_LEVEL
+	int "ESP32-CAM driver log level"
+	default 3
+	range 0 4
+	help
+	  Log level for the ESP32-CAM driver.
+
+endif # ESP32CAM_DRIVER
+
