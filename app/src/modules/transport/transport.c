@@ -16,7 +16,7 @@
 #include "message_channel.h"
 
 /* Register log module */
-LOG_MODULE_REGISTER(transport, CONFIG_MQTT_SAMPLE_TRANSPORT_LOG_LEVEL);
+LOG_MODULE_REGISTER(transport, CONFIG_APP_LOG_LEVEL);
 
 /* Register subscriber */
 ZBUS_SUBSCRIBER_DEFINE(transport, CONFIG_MQTT_SAMPLE_TRANSPORT_MESSAGE_QUEUE_SIZE);

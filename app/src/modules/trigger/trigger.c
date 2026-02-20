@@ -14,7 +14,7 @@
 #include "message_channel.h"
 
 /* Register log module */
-LOG_MODULE_REGISTER(trigger, CONFIG_MQTT_SAMPLE_TRIGGER_LOG_LEVEL);
+LOG_MODULE_REGISTER(trigger, CONFIG_APP_LOG_LEVEL);
 
 static void message_send(void)
 {

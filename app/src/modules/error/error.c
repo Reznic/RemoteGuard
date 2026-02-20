@@ -11,7 +11,7 @@
 #include "message_channel.h"
 
 /* Register log module */
-LOG_MODULE_REGISTER(error, CONFIG_MQTT_SAMPLE_ERROR_LOG_LEVEL);
+LOG_MODULE_REGISTER(error, CONFIG_APP_LOG_LEVEL);
 
 void error_callback(const struct zbus_channel *chan)
 {

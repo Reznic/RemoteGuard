@@ -12,13 +12,6 @@ menuconfig MQTT_SAMPLE_CAMERA
 
 if MQTT_SAMPLE_CAMERA
 
-config MQTT_SAMPLE_CAMERA_LOG_LEVEL
-	int "Camera module log level"
-	default 3
-	range 0 4
-	help
-	  Sets the log level for the camera module.
-
 config MQTT_SAMPLE_CAMERA_THREAD_STACK_SIZE
 	int "Camera module thread stack size"
 	default 2048

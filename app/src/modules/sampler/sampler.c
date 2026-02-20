@@ -13,7 +13,7 @@
 #define FORMAT_STRING "Hello MQTT! Current uptime is: %d"
 
 /* Register log module */
-LOG_MODULE_REGISTER(sampler, CONFIG_MQTT_SAMPLE_SAMPLER_LOG_LEVEL);
+LOG_MODULE_REGISTER(sampler, CONFIG_APP_LOG_LEVEL);
 
 /* Register subscriber */
 ZBUS_SUBSCRIBER_DEFINE(sampler, CONFIG_MQTT_SAMPLE_SAMPLER_MESSAGE_QUEUE_SIZE);

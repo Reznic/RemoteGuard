@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: LicenseRef-Nordic-5-Clause
 #
 
-menu "cellular guard"
+menu "Remote guard"
 
 config MQTT_SAMPLE_PAYLOAD_CHANNEL_STRING_MAX_SIZE
 	int "Payload maximum string size"
@@ -17,6 +17,13 @@ config MQTT_SAMPLE_CAMERA_CHUNK_SIZE
 	default 1024
 	help
 	  Size of each camera image chunk sent over MQTT. Should be 1-4 KB to balance overhead and RAM.
+
+config APP_LOG_LEVEL
+	int "log level"
+	default 3
+	range 0 4
+	help
+		Log level for the application.
 
 rsource "src/modules/trigger/Kconfig.trigger"
 rsource "src/modules/sampler/Kconfig.sampler"

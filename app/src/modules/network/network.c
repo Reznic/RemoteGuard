@@ -13,7 +13,7 @@
 #include "message_channel.h"
 
 /* Register log module */
-LOG_MODULE_REGISTER(network, CONFIG_MQTT_SAMPLE_NETWORK_LOG_LEVEL);
+LOG_MODULE_REGISTER(network, CONFIG_APP_LOG_LEVEL);
 
 /* This module does not subscribe to any channels */
 
